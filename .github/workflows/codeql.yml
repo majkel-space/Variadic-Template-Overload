@@ -86,7 +86,7 @@ jobs:
       if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        g++ -std=c++20 -Wall -Wextra -pedantic main.cpp -o app
+        g++ -std=c++20 -Wall -Wextra -pedantic variadic_templ.cpp -o app
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
